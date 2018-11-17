@@ -1,0 +1,36 @@
+
+<% if logged_in?%>
+
+<nav class='login-bar'>
+<p class='logged-text'><a href='/profile' class='user-name'><%= current_user.name %></a></p>
+<img src='<%=@u.avatar%>' class='miniature-avatar'>
+  <form action='/session' method="post">
+      <input type='hidden' name="_method" value="delete">
+      <button class='btn-logout'>Log Out</button>
+  </form>
+</nav>
+<% end %>
+
+<ul class='sub-list'>
+    <% @subjects.each do |subject| %>
+
+    <% if @joint.where(user_id: @u.id).where(subject_id: subject.id).count < 1%>
+
+        <div class='subjects-container'>
+                <li class='listed-subject'><%= subject.name %>
+                <br><span class='subject-introduction'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Don’t worry; this whole article isn’t in another language. 
+               </span></li>
+            <form action='/profile' method="post">
+                <input type='hidden' name='subject_id' value='<%=subject.id%>'>
+                <button class='btn-register'>Register</button>
+            </form>
+        </div>
+        <%end%>
+    <% end %>
+</ul>
+
+
+
+
+

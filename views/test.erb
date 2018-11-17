@@ -1,0 +1,31 @@
+
+<% if logged_in?%>
+
+<nav class='login-bar'>
+<p class='logged-text'><a href='/profile' class='user-name'><%= current_user.name %></a></p>
+<img src='<%=@u.avatar%>' class='miniature-avatar'>
+  <form action='/session' method="post">
+      <input type='hidden' name="_method" value="delete">
+      <button class='btn-logout'>Log Out</button>
+  </form>
+<p class='level-test'> Lev:<%= @question.level.floor%></p>
+</nav>
+<% end %>
+
+<main class='container-test'>
+<p class='question'><%= @domanda %></p>
+
+<form action='/result/<%=@subject.id%>' method='post'>
+    <label class='label'></label>
+    <textarea class='input-answer' name="solution" cols ='30' rows='1'></textarea>
+    <input type="hidden" name='result' value="<%= @question.id%>">
+    <input type="hidden" name='user_id' value="<%= @u.id%>">
+    <button class='btn-submit'>Submit</button>
+</form>
+</main>
+
+<p class='link-drop-container'><a href='/profile'class='link-drop'>Stop</a></p>
+
+
+<%# result/<%=@subject.id%>
+<%# ' %>

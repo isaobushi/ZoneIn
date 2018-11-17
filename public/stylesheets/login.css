@@ -1,0 +1,77 @@
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: #575757;
+}
+
+body {
+    background-color: #FBAB7E;
+    background-image: radial-gradient( rgb(236, 236, 236) 0%, #474747 );
+    background-repeat: none;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    height: 20rem;
+    width: 20rem;
+    background-image:  url(https://www.rd.com/wp-content/uploads/2018/02/math-problem-760x506.jpg);
+    border-radius: 30px;
+    border:1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    box-shadow: 5px 5px 2px grey;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input, .password-input {
+    margin: 10px;
+    border-radius: 10px;
+    height: 2rem;;
+    font-size: 20px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    border: none;
+    text-align: center;
+    outline: 0;
+
+}
+
+.password-label, .email-label{
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* .password-label:target, .email-label:focus{
+   outline-color: transparent;
+} */
+
+.btn-login {
+    width: 6rem;
+    margin: auto;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: rgb(253, 255, 133);
+}
+
+.user-register {
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(239, 245, 161);
+    text-align: center;
+    font-size: 20px;
+}

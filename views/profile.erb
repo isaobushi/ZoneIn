@@ -1,0 +1,80 @@
+<% if logged_in?%>
+
+<nav class='login-bar'>
+<p class='logged-text'><a href='/profile' class='user-name'><%= current_user.name %></a></p>
+  <form action='/session' method="post">
+      <input type='hidden' name="_method" value="delete">
+      <button class='btn-logout'>Log Out</button>
+  </form>
+  <form action='/subject'>
+      <button class='btn-exercise'>Exercises</button>
+  </form>
+</nav>
+<% end %>
+
+<div class='super-container'>
+<div class='stack'>
+<main class='profile-container'>
+<img src='<%=@u.avatar%>' class='profile-avatar'>
+<div class='user-details'>
+<h4>User name: <span class='span-details'><%= current_user.name%></span></h4>
+<h4>Email: <span class='span-details'><%= current_user.email%></span></h4>
+</div>
+</main>
+<section class='subjects-nav'>
+<% @user_subjects.each do |us| %>
+<ul>
+<li class='subects-list'><a href='/test/<%=us.subject_id%>' class='subjects-row'><%= @s.find_by(id: us.subject_id).name %></a> 
+<br><span class='stat-profile'>Completed<br>
+<%=((us.level - 2)*100) /4  %>%</span></li>
+</ul>
+<% end %>
+</div>
+</section>
+<div>
+<div class='bars'><canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<% stuff = [1,2,3]%>
+
+
+<script src="/javascripts/Chart.js"></script>
+<script>
+  var ctx = document.getElementById("myChart");
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Module", "Functions", "Debugging", "Arrays", "Strings", "Object"],
+        datasets: [{
+            label: '# Level',
+            data: [5, 2, 3, 4, 1, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
