@@ -4,6 +4,9 @@
 My team and I won a hackthon event elaborating an AI agorithm designed to help university students with their assignments,<br> I have implemented the idea in this web app.<br>
 <hr>
 https://stormy-reef-11568.herokuapp.com/
+
+![alt text](https://steemitimages.com/p/X37EMQ9WSwsJew5Q7fLcXmJJQNntLfq8EpuwSJuvS3hAsnjur7wy29eGvQLC3VxypZrru4of4eiRf4mA6SNg32YriNNqL8ZPhDD1Q?format=match&mode=fit)
+
 <hr>
 Built mainly with Ruby and the micro-framework Sinatra for the routing part 
 
