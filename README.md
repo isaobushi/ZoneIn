@@ -22,3 +22,4 @@ Built mainly with Ruby and the micro-framework Sinatra for the routing part
   * Registration confirmation, improve account security.
   * Implement a chat session beetween students and teachers.
   * Add different logo avatar for teachers.
+  * Implement a more user-friendly way to add profile avatar pictures.
