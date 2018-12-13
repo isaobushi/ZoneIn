@@ -8,8 +8,8 @@ https://stormy-reef-11568.herokuapp.com/
 Built mainly with Ruby and the micro-framework Sinatra for the routing part 
 
 <hr>
-<br>
-**Future implementation** <br>
+
+**Future implementation** 
 
   * At the moment is a working mvp, it needs a strong restyling <br>
     and more stutends tasks to be add on the Modules one
