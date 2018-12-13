@@ -11,7 +11,7 @@ Built mainly with Ruby and the micro-framework Sinatra for the routing part
 
 **Future implementation** 
 
-  * At the moment is a working mvp, it needs a strong restyling <br>
-    and more stutends tasks to be add on the Modules one
+  * At the moment it's a working mvp, it needs a strong restyling <br>
+    and more exercise to be added.
   * Implement a chat session beetween students and teachers
   * Add different logo avatar for teachers
