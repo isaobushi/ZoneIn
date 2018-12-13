@@ -1,6 +1,9 @@
 # ZoneIn
 
-
+**Have You Experienced Flow?**
+Have you ever had one of those moments where you get so caught up in what you're doing that time seems to fly by? Or when you're working on something, and it just happens so naturally and easily? Sometimes you can be astoundingly productive, spending hours working and it feels like minutes. Whatever you are working on - painting, woodworking, or even your taxes (for some weirdos) - it just comes to you so naturally and easily. <br>
+Dr. Csikszentmihalyi's best-known theory is that of flow. Flow is the state of concentration and engagement that can be achieved when completing a task that challenges one's skills.<br>
+<hr>
 My team and I won a hackthon event elaborating an AI agorithm designed to help university students with their assignments,<br> I have implemented the idea in this web app.<br>
 <hr>
 https://stormy-reef-11568.herokuapp.com/
