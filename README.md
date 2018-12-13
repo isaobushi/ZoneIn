@@ -5,11 +5,13 @@ My team and I won a hackthon event elaborating an AI agorithm designed to help u
 <hr>
 https://stormy-reef-11568.herokuapp.com/
 <hr>
-Built mainly with Ruby and the micro frame-work Sinatra for the routing part 
+Built mainly with Ruby and the micro-framework Sinatra for the routing part 
 
 <hr>
 <br>
 **Future implementation** <br>
 
-At the moment is a working mvp, it needs a strong restyling <br>
-and more stutends tasks to be add on the Modules one
+  * At the moment is a working mvp, it needs a strong restyling <br>
+    and more stutends tasks to be add on the Modules one
+  * Implement a chat session beetween students and teachers
+  * Add different logo avatar for teachers
